@@ -16,6 +16,8 @@ body {
     padding: 200px 0 120px 0;
     background-image:url(header.png);
     background-size: cover;
+    background-position:center;
+    height:100%;
     color: #291b00;
     text-align: left;
   }
