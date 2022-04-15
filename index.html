@@ -1,95 +1,192 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Menu Lebaran</title>
-    <link rel="stylesheet" href="stylesheet.css">
-   
-  </head>
-  <body>
-      <main>
-    <header>
-      <div class="container">
-        <div class="header-left">
-          <img class="logo" src="logo.png">
-        </div>
-        <div class="header-right">
-          <a href="#" class="Menu">Menu</a>
-        </div>
-      </div>
-    </header>
-    <div class="top-wrapper">
-      <div class="container">
-        <h1>MENU MAKANAN</h1>
-        <h1>KHAS LEBARAN</h1>
-        <p>Indonesia dikenal mempunyai kuliner yang beraneka ragam.</p>
-        <p>Lalu apa saja makanan khas lebaran di Indonesia ?</p>
+body {
+    margin: 0;
+    font-family: "Lucida Grande";
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .container {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .top-wrapper {
+    padding: 180px 0 100px 0; 
+    background-image:url(header.png);
+    background-size: cover;
+    color: #291b00;
+    text-align: left;
+  }
+  
+  .top-wrapper h1 {
+    opacity: 0.7;
+    font-size: 45px;
+    letter-spacing: 2px;
+    margin-bottom: 2px;
+  }
+  
+  .top-wrapper p {
+    opacity: 0.7;
+    margin-bottom: 3px;
+  }
+  
+  .btn-wrapper {
+    margin: 20px 0;
+  }
+  
+  .btn-wrapper p {
+    margin: 20px 0;
+  }
+  
+  .view {
+    background-color: #843700;
+    color: white;
+  }
+  
+  
+  .btn {
+    padding: 12px 24px;
+    color: white;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 8px;
+  }
+  
+  .btn:hover {
+    opacity: 1;
+  }
+  
+  .fa {
+    margin-right: 5px;
+  }
+  
+  header {
+    height: 65px;
+    width: 100%;
+    background-color:rgba(107, 79, 3, 0.5);
+    /* Ubah position ke fixed, dan top ke 0 */
+    position: fixed;
+    top: 0;
+    
+    /* Ubah z-index ke 10 */
+    z-index: 10;
+    
+  }
+  
+  .logo {
+    width: 124px;
+    margin-top: 4px;
+  }
+  
+  .header-left {
+    float: left;
+  }
+  
+  .header-right {
+    float: right;
+    background-color:rgba(255, 255, 128, .3);
+    transition: all 0.5s;
+  }
+  
+  .header-right:hover {
+    background-color:rgba(255, 255, 128, .5);
+  }
+  
+  .header-right a {
+    line-height: 65px;
+    padding: 0 25px;
+    color: white;
+    display: block;
+  }
+  
+  .lesson-wrapper {
+    padding-bottom: 80px;
+    background-color: #fcfbd8;
+    text-align: left;
+  }
+  
+  .heading {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    color: #5f5d60;
+  }
+  
+  .heading h2 {
+    font-weight: normal;
+  }
+  
+  .lessons {
+    height: 50px;
+    margin-top: 100px;  
 
-        <div class="btn-wrapper">
-          <a href="#" class="btn view">Lihat selengkapnya</a>
-         
-        </div>
-      </div>
-    </div>
-    </main>
-    <div class="lesson-wrapper">
-      <div class="container">
-        <div class="heading">
-          <h2>Berikut ini adalah 5 menu makanan khas lebaran di Indonesia</h2>
-        </div>
-        <div class="lessons">
-          <div class="lesson">
-            <div class="lesson-icon">
-              <img src="ketupat.png">
-               <p>Ketupat</p>
-            </div>
-            <p class="txt-contents">adalah hidangan khas Asia Tenggara maritim berbahan dasar beras yang dibungkus dengan pembungkus terbuat dari anyaman daun kelapa muda (janur), atau kadang-kadang dari daun palma yang lain. Ketupat paling banyak ditemui pada saat perayaan Lebaran sampai 5 hari berikutnya ketika umat Islam merayakan berakhirnya bulan puasa. </p>
-          </div>
-          <div class="lesson">
-            <div class="lesson-icon">
-              <img src="opor.png">
-              <p>Opor Ayam</p>
-            </div>
-            <p class="txt-contents">Opor ayam sebenarnya adalah ayam rebus yang diberi bumbu kental dari santan yang ditambah berbagai bumbu seperti serai, kencur, dan sebagainya. Dalam tradisi Jawa, perayaan Lebaran biasanya dibuat meriah dengan membuat ketupat yang disajikan dengan opor ayam dan sambal goreng hati.</p>
-          </div>
-          <div class="lesson">
-            <div class="lesson-icon">
-              <img src="rendang.png">
-              <p>Rendang</p>
-            </div>
-            <p class="txt-contents">adalah masakan daging asli Indonesia yang berasal dari Minangkabau. Masakan ini dihasilkan dari proses memasak suhu rendah dalam waktu lama menggunakan aneka rempah-rempah dan santan.</p>
-          </div>
-          <div class="lesson">
-            <div class="lesson-icon">
-              <img src="sambal_gooreng.png">
-              <p>Sambal Goreng hati</p>
-            </div>
-            <p class="txt-contents">Sambal Goreng Hati adalah makanan dengan bahan hati ampela ayam dengan bumbu sambal dan tambahan petai. Ini salah satu jenis masakan yang cukup populer di rumah tangga Indonesia terutama untuk acara khusus seperti arisan dan pesta pernikahan maupun saat lebaran.</p>
-          </div>
-          <div class="lesson">
-            <div class="lesson-icon">
-              <img src="nastar.png">
-              <p>Kue Nastar</p>
-            </div>
-            <p class="txt-contents">Nastar adalah sejenis kue kering dari adonan tepung terigu, mentega, dan telur yang diisi dengan selai nanas atau cokelat, dan rasa lainnya. Asal katanya dari bahasa Belanda ananas dan taart. Bentuk kue ini bulat-bulat dengan diameter sekitar 2 cm, di atasnya sering dihias dengan potongan kecil kismis atau cengkih.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="message-wrapper">
-      <div class="container">
-        <div class="heading">
-          <h2>Itu dia beberapa menu makanan lebaran yang populer di Indonesia dan paling ditunggu-tunggu kehadirannya.</h2>
-          <h3>Kenikmatan kuliner dan momen kebersamaan dengan orang terkasihpun semakin menyenangkan.</h3>
-        </div>
-        <span class="btn message">Kirim</span>
-      </div>
-    </div>
-    <footer>
-      <div class="container">
-        <img src="logo.png">
-        <p>Info kuliner masa kini</p>
-      </div>
-    </footer>
-  </body>
-</html>
+  }
+
+  .section-title {
+    border-bottom: 2px solid #dee7ec;
+    font-size: 28px;
+
+  }
+
+  .lesson{
+    float: left;
+  }
+  
+  .lesson-icon {
+    float: left;
+    position: relative;
+  }
+  
+  .lesson-icon p {
+    position: absolute;
+    font-size: 24px;
+    top: 90px;
+    width:10px;    
+    
+  }
+  
+  .txt-contents {
+    width: 100%;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 15px;
+    color: #b3aeb5;
+  }
+  
+  .message-wrapper {
+    border-bottom: 1px solid #eee;
+    padding-top: 500px;
+    padding-bottom: 80px;
+    text-align: center;
+  }
+  
+  .message {
+    padding: 15px 40px;
+    background-color: #5dca88;
+    cursor: pointer;
+    box-shadow: 0 7px #1a7940;
+  }
+  
+  .message:active {
+    position: relative;
+    top: 7px;
+    box-shadow: none;
+  }
+  
+  footer img {
+    width: 125px;
+  }
+  
+  footer p {
+    color: #b3aeb5;
+    font-size: 12px;
+  }
+  footer li {
+    color: #b3aeb5;
+    font-size: 12px;
+  }
+  footer {
+    padding-top: 30px;
+  }
