@@ -10,6 +10,7 @@ body {
   .container {
     width: 1170px;
     margin: 0 auto;
+    padding: 0 15px;
   }
   
   .top-wrapper {
@@ -45,7 +46,6 @@ body {
     color: white;
   }
   
- 
   
   .btn {
     padding: 12px 24px;
@@ -87,7 +87,7 @@ body {
   
   .header-right {
     float: right;
-    background-color:rgba(255, 255, 128, .5);
+    background-color:rgba(255, 255, 128, .3);
     transition: all 0.5s;
   }
   
@@ -103,10 +103,9 @@ body {
   }
   
   .lesson-wrapper {
-    height: 100px;
     padding-bottom: 80px;
-    background-color: #f7f7f7;
-    text-align: center;
+    background-color: #fcfbd8;
+    text-align: left;
   }
   
   .heading {
@@ -119,20 +118,33 @@ body {
     font-weight: normal;
   }
   
-  .lesson {
-    float: left;
+  .lessons {
+    height: 50px;
+    margin-top: 100px;  
 
+  }
+
+  .section-title {
+    border-bottom: 2px solid #dee7ec;
+    font-size: 28px;
+
+  }
+
+  .lesson{
+    float: left;
   }
   
   .lesson-icon {
+    float: left;
     position: relative;
   }
   
   .lesson-icon p {
     position: absolute;
+    font-size: 24px;
     top: 90px;
-    width:10px;
-    color: white;
+    width:10px;    
+    
   }
   
   .txt-contents {
@@ -143,12 +155,9 @@ body {
     color: #b3aeb5;
   }
   
-  .heading h3 {
-    font-weight: normal;
-  }
-  
   .message-wrapper {
     border-bottom: 1px solid #eee;
+    padding-top: 500px;
     padding-bottom: 80px;
     text-align: center;
   }
@@ -174,7 +183,10 @@ body {
     color: #b3aeb5;
     font-size: 12px;
   }
-  
+  footer li {
+    color: #b3aeb5;
+    font-size: 12px;
+  }
   footer {
     padding-top: 30px;
   }
